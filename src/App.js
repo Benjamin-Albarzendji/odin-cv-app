@@ -1,6 +1,7 @@
 import Personal from './components/Personal';
 import Work from './components/Work';
 import Academic from './components/Academic';
+import Skills from "./components/Skills"
 import './styles/App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Personal></Personal>
       <Work></Work>
       <Academic> </Academic>
+      <Skills></Skills>
     </div>
   );
 }
