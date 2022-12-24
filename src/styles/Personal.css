@@ -1,7 +1,33 @@
 .Personal {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   gap: 10px;
-  font-size: 3rem;
+  flex-wrap: wrap;
+}
+
+.Personal .right {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: end;
+}
+
+.Personal .left .names {
+  display: flex;
+  font-size: 2rem;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Personal .left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Personal .left > div:last-child {
+  font-size: 1.5rem;
 }

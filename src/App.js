@@ -3,9 +3,9 @@ import './styles/App.css';
 
 function App() {
   return (
-
-<Personal></Personal>
-
+    <div className = "CV">
+      <Personal></Personal>
+    </div>
   );
 }
 

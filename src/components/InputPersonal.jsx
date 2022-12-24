@@ -5,31 +5,47 @@ class InputPersonal extends Component {
     super(props);
     this.state = {
       value: this.props.value,
-      isEditing: false,
     };
   }
 
-
-
-  keyDown = (e) => {
-    
-    if (e.keyCode === 13){
-        // e.preventDefault()
-        e.target.blur()
+  onEnter = (e) => {
+    if (e.keyCode === 13) {
+      e.target.blur();
+      if (e.target.textContent !== '') {
         this.setState({
-            value: e.target.textContent,
-          });
+          value: e.target.textContent,
+        });
+      }
     }
-  }
+  };
+
+  onFocuser = (e) => {
+    if (e.target.textContent === this.state.value) {
+      e.target.textContent = '';
+    }
+  };
+
+  onBlurer = (e) => {
+    if (e.target.textContent === '') {
+      e.target.textContent = this.state.value;
+    }
+  };
+
+  onClicker = (e) => {
+    e.target.contentEditable = true;
+    e.target.focus();
+  };
 
   render() {
     return (
       <div
         className={this.props.className}
-        contentEditable="true"
+        contentEditable="false"
         suppressContentEditableWarning={true}
-        onKeyDown={this.keyDown}
-        onInput={this.changeText}
+        onKeyDown={this.onEnter}
+        onFocus={this.onFocuser}
+        onBlur={this.onBlurer}
+        onClick={this.onClicker}
       >
         {this.state.value}
       </div>
