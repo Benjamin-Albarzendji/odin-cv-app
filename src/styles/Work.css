@@ -1,0 +1,71 @@
+button {
+  margin-top: 2%;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background: rgb(85, 178, 255);
+  border: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition:1s;
+}
+
+button:hover {
+  background: rgb(66, 137, 196);
+  transition:1s;
+  cursor:pointer;
+}
+button:active{
+    transition:1s;
+    transform:scale(0.9)
+}
+
+.topBorder {
+  width: 100%;
+  margin-top: 2%;
+  border: 1px solid rgb(68, 146, 255);
+}
+.workTitle {
+  margin-top: 1%;
+  font-size: 2rem;
+}
+
+.Work .job {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Work .job .left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.company {
+  font-weight: bold;
+}
+.sector {
+  font-style: italic;
+}
+.title {
+  font-weight: 600;
+  color: rgb(86, 86, 86);
+}
+.Work .job .right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: end;
+}
+.location {
+  font-weight: bold;
+}
+
+.dates {
+  display: flex;
+  gap: 3px;
+  text-align: end;
+}

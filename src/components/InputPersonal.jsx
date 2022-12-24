@@ -9,13 +9,8 @@ class InputPersonal extends Component {
   }
 
   onEnter = (e) => {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && e.shiftKey === false) {
       e.target.blur();
-      if (e.target.textContent !== '') {
-        this.setState({
-          value: e.target.textContent,
-        });
-      }
     }
   };
 
