@@ -1,8 +1,8 @@
 import react, { Component } from 'react';
 import InputPersonal from './InputPersonal';
-import '../styles/Work.css';
+import '../styles/Academic.css';
 
-class Work extends Component {
+class Academic extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,22 +22,16 @@ class Work extends Component {
 
   render() {
     return (
-      <div className="Work">
+      <div className="Academic">
         <div className="topBorder"></div>
-        <div className="workTitle">Work Experience</div>
+        <div className="workTitle">Academic</div>
         {this.state.children.map((n) => (
-          <div className="job" key={n}>
+          <div className="education" key={n}>
             <div className="left">
-              <InputPersonal value="Company" className="company">
+              <InputPersonal value="University" className="university">
                 {' '}
               </InputPersonal>
-              <InputPersonal value="Sector" className="sector">
-                {' '}
-              </InputPersonal>
-              <InputPersonal value="Title" className="title">
-                {' '}
-              </InputPersonal>
-              <InputPersonal value="Description " className="description">
+              <InputPersonal value="Degree" className="degree">
                 {' '}
               </InputPersonal>
             </div>
@@ -58,10 +52,12 @@ class Work extends Component {
           </div>
         ))}
 
-        <button className = "workButton" onClick={this.onClicker}>+ Job</button>
+        <button className="academicButton" onClick={this.onClicker}>
+          + Education
+        </button>
       </div>
     );
   }
 }
 
-export default Work;
+export default Academic;

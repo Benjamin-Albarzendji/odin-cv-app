@@ -1,4 +1,4 @@
-.workButton {
+.academicButton {
   margin-top: 2%;
   width: 100px;
   height: 30px;
@@ -7,17 +7,17 @@
   border: none;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  transition:1s;
+  transition: 1s;
 }
 
 button:hover {
   background: rgb(66, 137, 196);
-  transition:1s;
-  cursor:pointer;
+  transition: 1s;
+  cursor: pointer;
 }
-button:active{
-    transition:1s;
-    transform:scale(0.9)
+button:active {
+  transition: 1s;
+  transform: scale(0.9);
 }
 
 .topBorder {
@@ -30,7 +30,7 @@ button:active{
   font-size: 2rem;
 }
 
-.Work .job {
+.Academic .education {
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
@@ -38,23 +38,17 @@ button:active{
   gap: 10px;
 }
 
-.Work .job .left {
+.Academic .education .left {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.company {
+.university {
   font-weight: bold;
 }
-.sector {
-  font-style: italic;
-}
-.title {
-  font-weight: 600;
-  color: rgb(86, 86, 86);
-}
-.Work .job .right {
+
+.Academic .eduation .right {
   display: flex;
   flex-direction: column;
   gap: 5px;
