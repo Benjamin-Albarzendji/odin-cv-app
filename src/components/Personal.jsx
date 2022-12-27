@@ -15,13 +15,13 @@ class Personal extends Component {
     return (
       <div className="Personal">
         <div className="left">
-            <div className="names">
-          <InputPersonal className="firstName" value="First Name">
-            {' '}
-          </InputPersonal>
-          <InputPersonal className="lastName" value="Last Name">
-            {' '}
-          </InputPersonal>
+          <div className="names">
+            <InputPersonal className="firstName" value="First Name">
+              {' '}
+            </InputPersonal>
+            <InputPersonal className="lastName" value="Last Name">
+              {' '}
+            </InputPersonal>
           </div>
           <InputPersonal className="currentRole" value="Current Role">
             {' '}

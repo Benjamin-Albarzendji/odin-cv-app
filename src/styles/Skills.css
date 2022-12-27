@@ -1,9 +1,14 @@
-.skill{
-    margin-top:1%;
+.skill {
+  margin-top: 1%;
 }
 
-.SkillsContainer{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+.SkillsContainer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Skills:hover button {
+  opacity: 1;
+  transition: 1s;
 }

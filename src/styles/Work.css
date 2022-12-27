@@ -1,4 +1,5 @@
 .workButton {
+  opacity: 0;
   margin-top: 2%;
   width: 100px;
   height: 30px;
@@ -7,17 +8,17 @@
   border: none;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  transition:1s;
+  transition: 1s;
 }
 
 button:hover {
   background: rgb(66, 137, 196);
-  transition:1s;
-  cursor:pointer;
+  transition: 1s;
+  cursor: pointer;
 }
-button:active{
-    transition:1s;
-    transform:scale(0.9)
+button:active {
+  transition: 1s;
+  transform: scale(0.9);
 }
 
 .topBorder {
@@ -68,4 +69,37 @@ button:active{
   display: flex;
   gap: 3px;
   text-align: end;
+}
+
+.job {
+  position: relative;
+}
+.job .delButton {
+  opacity: 0;
+  position: absolute;
+  left: -25px;
+  top: 2px;
+  border-radius: 5px;
+  border: none;
+  background: red;
+  font-size: 0.6rem;
+}
+
+.job:hover button {
+  opacity: 1;
+  transition: 1s;
+}
+.Work:hover button {
+  opacity: 1;
+  transition: 1s;
+}
+
+.delButton:hover {
+  background: rgb(196, 66, 94);
+  transition: 1s;
+  cursor: pointer;
+}
+.delButton:active {
+  transition: 1s;
+  transform: scale(0.9);
 }

@@ -1,4 +1,5 @@
 .academicButton {
+  opacity: 0;
   margin-top: 2%;
   width: 100px;
   height: 30px;
@@ -10,12 +11,17 @@
   transition: 1s;
 }
 
-button:hover {
+.Academic:hover button {
+  opacity: 1;
+  transition: 1s;
+}
+
+.academicButton:hover {
   background: rgb(66, 137, 196);
   transition: 1s;
   cursor: pointer;
 }
-button:active {
+.academicButton:active {
   transition: 1s;
   transform: scale(0.9);
 }
@@ -62,4 +68,33 @@ button:active {
   display: flex;
   gap: 3px;
   text-align: end;
+}
+
+.education {
+  position: relative;
+}
+.education .delButton {
+  opacity: 0;
+  position: absolute;
+  left: -25px;
+  top: 2px;
+  border-radius: 5px;
+  border: none;
+  background: red;
+  font-size: 0.6rem;
+}
+
+.education:hover .delButton {
+  opacity: 1;
+  transition: 1s;
+}
+
+.delButton:hover {
+  background: rgb(196, 66, 94);
+  transition: 1s;
+  cursor: pointer;
+}
+.delButton:active {
+  transition: 1s;
+  transform: scale(0.9);
 }

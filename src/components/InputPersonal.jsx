@@ -15,9 +15,10 @@ class InputPersonal extends Component {
   };
 
   onFocuser = (e) => {
-    if (e.target.textContent === this.state.value) {
-      e.target.textContent = '';
-    }
+    // e.target.selectAll()
+    setTimeout(function () {
+      document.execCommand('selectAll', false, null);
+    }, 0);
   };
 
   onBlurer = (e) => {
@@ -41,6 +42,7 @@ class InputPersonal extends Component {
         onFocus={this.onFocuser}
         onBlur={this.onBlurer}
         onClick={this.onClicker}
+        maxLength="10"
       >
         {this.state.value}
       </div>

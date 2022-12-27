@@ -20,13 +20,19 @@ class Academic extends Component {
     }));
   };
 
+  delete = (e) => {
+    let id = e.target.parentNode.id;
+    let childrenTemp = this.state.children.filter((i) => i != id);
+    this.setState({ children: childrenTemp });
+  };
+
   render() {
     return (
       <div className="Academic">
         <div className="topBorder"></div>
         <div className="workTitle">Academic</div>
         {this.state.children.map((n) => (
-          <div className="education" key={n}>
+          <div className="education" key={n} id={n}>
             <div className="left">
               <InputPersonal value="University" className="university">
                 {' '}
@@ -49,6 +55,9 @@ class Academic extends Component {
                 </InputPersonal>
               </div>
             </div>
+            <button className="delButton" onClick={this.delete}>
+              X
+            </button>
           </div>
         ))}
 
