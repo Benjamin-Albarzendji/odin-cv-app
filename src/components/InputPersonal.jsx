@@ -8,6 +8,8 @@ class InputPersonal extends Component {
     };
   }
 
+  
+
   onEnter = (e) => {
     if (e.keyCode === 13 && e.shiftKey === false) {
       e.target.blur();
