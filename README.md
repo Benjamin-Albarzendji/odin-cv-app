@@ -1,4 +1,4 @@
-# odin-weather-app
+# odin-cv-app
 
 ### Interactable CV document
 <img src="src/readme/UI.png" alt="drawing" width="800" style = "border-radius: 15px"/>
